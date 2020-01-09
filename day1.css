@@ -1,0 +1,57 @@
+
+/*전체 text 이미지 설정*/
+* {
+	font-family: 'Gamja Flower', cursive;
+}
+
+
+/*  '전체 가로폭 조정 및 가운데 정렬' 관련 class(class_name 'wrap_comment')*/
+	  .wrap_all
+	   {
+      width: 500px;
+       margin: auto;
+    }
+
+/*글자사이 간격*/
+    .height
+  {
+    line-height: 15px;
+  }
+
+/*부제목 관련 class(class_name "wrap_comment_for_subject)*/
+    .wrap_comment_for_subject
+    {
+    	 width: 1000px;
+       margin: auto;
+}
+
+/*image size를 위한 class(class_name 'image')*/
+	.image {
+
+		 background-image: url('http://image.bshopping.co.kr/goods/943/21010943_g.jpg');
+		 background-size: cover;
+      background-position: center;
+        
+         /*가로 */
+        width: 500px;
+
+        /*세로 */
+        height: 500px;
+
+        /*테두리 둥글게 만드는 속성*/
+        border-radius: 10px;
+         margin: 30px auto; 
+        background-color: white;
+        color: white ;
+        padding: 10px;
+        
+       	}
+
+  
+/*button과 관련된 class(class_name 'button)*/
+  .button {
+
+      width: 100px;
+      margin: auto;
+    }
+  

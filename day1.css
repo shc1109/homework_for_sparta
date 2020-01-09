@@ -18,6 +18,15 @@
     line-height: 15px;
   }
 
+/*"주문하기" 항목을 위한 글자사이 간격*/
+
+    .height_order
+  {
+    line-height: 40px;
+  }
+
+
+
 /*부제목 관련 class(class_name "wrap_comment_for_subject)*/
     .wrap_comment_for_subject
     {

@@ -43,8 +43,8 @@
 function q1(){
         let name_value = $('#name_input').val();  
         let address_value = $('#address_input').val();
-        let number_value = $('#inputGroupSelect01').val();
-        var regExp = /(^02.{0}|^01.{1}|[0-9]{3})([0-9]+)([0-9]{4})/g;
+        let number_value = $('#how_many_input').val();
+        var regExp = /(01[016789])[-](\d{4}|\d{3})[-]\d{4}$/g; 
         var phone_value = $('#phone_input').val();
       
       
@@ -58,7 +58,7 @@ function q1(){
       else if(number_value == '수량선택.'){
 
           alert('수량을 입력하세요.')
-          $("#inputGroupSelect01").focus();
+          $("#how_many_input").focus();
         }
 
         else if(address_value == ''){
@@ -73,7 +73,8 @@ function q1(){
        }
     
       else if (regExp.test(phone_value) ==! true ){
-      alert("잘못된 휴대폰 번호입니다.숫자만 입력하세요");
+      alert("잘못된 휴대폰 번호입니다.'숫자 및 -'을 입력하세요");
+       $("#phone_input").focus();
        }
 
         else {
@@ -197,7 +198,7 @@ $('#tbody_id').html('');
   <div class="input-group-prepend">
     <label class="input-group-text" for="inputGroupSelect01">수량</label>
   </div>
-  <select class="custom-select" id="inputGroupSelect01">
+  <select class="custom-select" id="how_many_input">
     <option selected>수량선택.</option>
     <option value="1">1</option>
     <option value="2">2</option>
